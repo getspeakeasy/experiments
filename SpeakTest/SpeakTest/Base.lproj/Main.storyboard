@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints with attributes relative to the layout margin" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SpeakTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9p-7M-TSU">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </scrollView>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mCF-Bc-erM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Ei2-zs-NiH"/>
+                                    <constraint firstAttribute="height" constant="44" id="hX6-cL-OJV"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Ei2-zs-NiH"/>
+                                        <exclude reference="hX6-cL-OJV"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Ei2-zs-NiH"/>
+                                        <include reference="hX6-cL-OJV"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSA-NZ-76U">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="6QD-66-Ej4"/>
+                                    <constraint firstAttribute="width" constant="44" id="Ewm-GO-6Gi"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="font_button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6QD-66-Ej4"/>
+                                        <exclude reference="Ewm-GO-6Gi"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="6QD-66-Ej4"/>
+                                        <include reference="Ewm-GO-6Gi"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="changeFont:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Dk1-Gt-l5M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGH-OC-dhy">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="3GA-lH-CB8"/>
+                                    <constraint firstAttribute="width" constant="44" id="Fnn-fg-eSE"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="image_button">
+                                    <color key="titleColor" red="0.34901961679999999" green="0.82745105029999999" blue="0.90196084980000002" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="image_button_selected"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3GA-lH-CB8"/>
+                                        <exclude reference="Fnn-fg-eSE"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="3GA-lH-CB8"/>
+                                        <include reference="Fnn-fg-eSE"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="toggleImagePicker:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uvP-ki-8v8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="E9p-7M-TSU" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-20" id="0Co-vn-1n9"/>
+                            <constraint firstItem="mCF-Bc-erM" firstAttribute="leading" secondItem="eSA-NZ-76U" secondAttribute="trailing" constant="15" id="0yn-WL-cVa">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="mCF-Bc-erM" secondAttribute="bottom" constant="378" id="A4o-0R-8Jh">
+                                <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="mCF-Bc-erM" secondAttribute="centerX" id="C6p-4E-hAs"/>
+                            <constraint firstItem="E9p-7M-TSU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="I3U-x7-8XO"/>
+                            <constraint firstItem="eSA-NZ-76U" firstAttribute="top" secondItem="mCF-Bc-erM" secondAttribute="top" id="IsB-nM-PIR"/>
+                            <constraint firstItem="DGH-OC-dhy" firstAttribute="top" secondItem="mCF-Bc-erM" secondAttribute="top" id="Yna-25-I0K"/>
+                            <constraint firstItem="DGH-OC-dhy" firstAttribute="leading" secondItem="mCF-Bc-erM" secondAttribute="trailing" id="nQP-3b-r55"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="E9p-7M-TSU" secondAttribute="trailing" constant="-16" id="yKR-3q-MhM"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="E9p-7M-TSU" secondAttribute="bottom" id="zIf-jn-zyY"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="E9p-7M-TSU"/>
+                                <exclude reference="mCF-Bc-erM"/>
+                                <exclude reference="eSA-NZ-76U"/>
+                                <exclude reference="DGH-OC-dhy"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="A4o-0R-8Jh"/>
+                                <exclude reference="zIf-jn-zyY"/>
+                                <exclude reference="Yna-25-I0K"/>
+                                <exclude reference="nQP-3b-r55"/>
+                                <exclude reference="IsB-nM-PIR"/>
+                                <exclude reference="0Co-vn-1n9"/>
+                                <exclude reference="I3U-x7-8XO"/>
+                                <exclude reference="yKR-3q-MhM"/>
+                                <exclude reference="0yn-WL-cVa"/>
+                                <exclude reference="C6p-4E-hAs"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="E9p-7M-TSU"/>
+                                <include reference="mCF-Bc-erM"/>
+                                <include reference="eSA-NZ-76U"/>
+                                <include reference="DGH-OC-dhy"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="A4o-0R-8Jh"/>
+                                <include reference="zIf-jn-zyY"/>
+                                <include reference="Yna-25-I0K"/>
+                                <include reference="nQP-3b-r55"/>
+                                <include reference="IsB-nM-PIR"/>
+                                <include reference="0Co-vn-1n9"/>
+                                <include reference="I3U-x7-8XO"/>
+                                <include reference="yKR-3q-MhM"/>
+                                <include reference="0yn-WL-cVa"/>
+                                <include reference="C6p-4E-hAs"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="fontButton" destination="eSA-NZ-76U" id="U8s-Gb-L0T"/>
+                        <outlet property="imageButton" destination="DGH-OC-dhy" id="BdY-im-SH3"/>
+                        <outlet property="scrollView" destination="E9p-7M-TSU" id="X9x-3I-GCL"/>
+                        <outlet property="scrollViewBottomConstraint" destination="zIf-jn-zyY" id="mFT-GP-3ry"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="font_button" width="45" height="45"/>
+        <image name="image_button" width="44" height="44"/>
+        <image name="image_button_selected" width="44" height="44"/>
+    </resources>
+</document>

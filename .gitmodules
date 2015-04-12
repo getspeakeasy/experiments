@@ -1,0 +1,3 @@
+[submodule "ImageSearch/Alamofire"]
+	path = ImageSearch/Alamofire
+	url = https://github.com/Alamofire/Alamofire.git

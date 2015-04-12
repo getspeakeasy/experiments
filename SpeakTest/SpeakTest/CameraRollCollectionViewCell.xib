@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6206.9" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CameraRollCell" id="A1o-Yf-D9o">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="230"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CHOOSE OR TAKE PHOTO" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gt6-Y1-FeJ">
+                        <rect key="frame" x="10" y="100" width="130" height="41"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.3490196168422699" green="0.82745105028152466" blue="0.90196084976196289" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera_icon" translatesAutoresizingMaskIntoConstraints="NO" id="xrs-ym-bwR">
+                        <rect key="frame" x="65" y="49" width="20" height="17"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <nil key="simulatedStatusBarMetrics"/>
+                <nil key="simulatedTopBarMetrics"/>
+                <nil key="simulatedBottomBarMetrics"/>
+            </view>
+            <constraints>
+                <constraint firstItem="gt6-Y1-FeJ" firstAttribute="top" secondItem="xrs-ym-bwR" secondAttribute="bottom" constant="20" id="Xjj-af-hkU"/>
+                <constraint firstItem="gt6-Y1-FeJ" firstAttribute="leading" secondItem="A1o-Yf-D9o" secondAttribute="leading" constant="10" id="Ybd-zZ-1px"/>
+                <constraint firstItem="xrs-ym-bwR" firstAttribute="top" secondItem="A1o-Yf-D9o" secondAttribute="top" constant="49" id="hiV-wf-PzS"/>
+                <constraint firstAttribute="trailing" secondItem="gt6-Y1-FeJ" secondAttribute="trailing" constant="10" id="qmV-mI-WaQ"/>
+                <constraint firstAttribute="centerX" secondItem="xrs-ym-bwR" secondAttribute="centerX" id="r2c-r4-stV"/>
+            </constraints>
+            <size key="customSize" width="150" height="230"/>
+            <point key="canvasLocation" x="555" y="296"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="camera_icon" width="20" height="17"/>
+    </resources>
+</document>
